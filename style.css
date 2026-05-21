@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.body{
+    font-family:Georgia, serif;
+    background:#f4efec;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#5a3d2b;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#5a3d2b;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#b46b4e;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* IMMAGINE HERO */
+
+.hero img{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* OVERLAY SCURO */
+
+.overlay{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+}
+
+/* CONTENUTO HERO */
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+    color:white;
+
+    max-width:700px;
+
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.6;
+
+    margin-bottom:35px;
+}
+
+/* BOTTONI HERO */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.hero-btn{    
+    text-decoration:none;   
+     background:#7f9c7a;    
+     color:white;    
+     padding:14px 28px;    
+     border-radius:40px;    
+     transition:0.3s;
+    }
+     
+     .hero-btn:hover{    
+        background:#5f7c5a;
+    }
+    /* SEZIONE INTRO */
+    .intro{    
+        display:flex;    
+        justify-content:center;    
+        align-items:center;    
+        flex-wrap:wrap;    
+        gap:40px;    
+        padding:80px 10%;
+    }
+    .intro-box{    
+        background:#7f9c7a;    
+        padding:40px;    
+        border-radius:20px;    
+        flex:1;    
+        min-width:300px;
+    }
+    .intro-box h2{   
+         margin-bottom:20px;    
+         color:#5a3d2b;
+        }
+        .intro-box p{    
+            line-height:1.8;
+        }
+        .intro-text{    
+            flex:1;    
+            min-width:300px;
+        }
+        .intro-text p{    
+            line-height:1.9;    
+            font-size:18px;
+        }
+        /* CARD */
+      .cards{
+    width:90%;
+    margin:auto;
+
+    padding:80px 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:35px;
+}
+        .card{    
+            background:white;    
+            border-radius:15px;    
+            overflow:hidden;    
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);    
+            transition:0.3s;
+        }
+        .card:hover{    
+            transform:translateY(-8px);
+        }
+        .card img{    
+            width:100%;    
+            height:220px;    
+            object-fit:cover;
+        }
+        .card h3{    
+            padding:20px 20px 10px;   
+             color:#6d3e2a;}.card p{    
+            padding:0 20px 20px;   
+            line-height:1.6;
+        }
+        /* PULSANTE CARD */
+        .btn-card{    
+            display:inline-block;   
+             margin:0 20px 20px;    
+             text-decoration:none;    
+             background:#7f9c7a; /* colore base fallback */    
+             color:white;    
+             padding:12px 22px;    
+             border-radius:30px;    
+             transition:0.3s;
+            }
+
+/* COLORI PULSANTI */
+
+.agrigento{
+    background:#CA8888;
+}
+
+.caltanissetta{
+    background:#FFBE0C;
+}
+
+.catania{
+    background:#C40000;
+}
+
+.palermo{
+    background:#FF00B2;
+}
+
+.messina{
+    background:#00B9F6;
+}
+
+.ragusa{
+    background:#AD7340;
+}
+
+.siracusa{
+    background:#D000FF;
+}
+
+.trapani{
+    background:#0D00FF;
+}
+
+.enna{
+    background:#38CD45;
+}
+
+/* HOVER */
+
+.agrigento:hover,
+.caltanissetta:hover,
+.catania:hover,
+.palermo:hover,
+.messina:hover,
+.ragusa:hover,
+.siracusa:hover,
+.trapani:hover,
+.enna:hover{
+    filter:brightness(85%);
+}
+
+            .btn-card:hover{    
+                background:#5f7c5a;
+            }/* MAPPA */
+            .mappa{    
+                text-align:center;   
+                padding:80px 10%;
+            }
+            .mappa h2{    
+                    margin-bottom:30px; 
+                     color:#5a3d2b;    
+                     font-size:40px;
+                    }
+                    .mappa img{   
+                    width:100%;    
+                    max-width:700px;    
+                    border-radius:20px;    
+                    box-shadow:0 4px 12px 
+                    rgba(0,0,0,0.15);
+                }
+                /* FOOTER */
+                .footer{    
+                    background:#7f9c7a;    
+                    color:white;    
+                    padding-top:50px;    
+                    margin-top:60px;
+                }
+                .footer-container{    
+                    width:90%;    
+                    margin:auto;    
+                    display:flex;    
+                    justify-content:space-between;    
+                    gap:40px;    
+                    flex-wrap:wrap;    
+                    padding-bottom:40px;
+                }
+                .footer-box{    
+                    flex:1;    
+                    min-width:250px;
+                }.footer-box h2,
+                .footer-box h3{   
+                     margin-bottom:20px;
+                    }
+                    .footer-box p{    
+                        line-height:1.8;   
+                         color:#ddd;
+                        }
+                        .footer-box a{    
+                            display:block;    
+                            color:#ddd;    
+                            text-decoration:none;    
+                            margin-bottom:12px;    
+                            transition:0.3s;
+                        }
+                        .footer-box a:hover{    
+                            color:white;    
+                            padding-left:5px;
+                        }
+                        /* COPYRIGHT */
+                        .footer-bottom{    
+                            text-align:center;    
+                            padding:20px;    
+                            border-top:1px solid
+                             rgba(255,255,255,0.2);    
+                             font-size:14px;   
+                              color:#ccc;
+                            }
+                            /* RESPONSIVE */
+                            @media(max-width:900px){    
+                                .header{        
+                                    flex-direction:column;        
+                                    gap:15px;        
+                                    padding:20px;    
+                                }    
+                                .hero-content h1{        
+                                    font-size:42px;    
+                                }    
+                                .hero-content p{        
+                                    font-size:18px;    
+                                }    
+                                .menu{        
+                                    flex-wrap:wrap;        
+                                    justify-content:center;    
+                                }
+                            }
